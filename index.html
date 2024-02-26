@@ -13,13 +13,16 @@
       color: white; /* Letras en blanco */
     }
     h2 {
-      font-size: 100px; /* Tamaño de fuente del subtítulo */
+      font-size: 500px; /* Tamaño de fuente del subtítulo */
+    }
+    .button {
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  <!-- Botón de Premio / Prize Button -->
-  <button onclick="activarPremio()">Premio / Prize</button>
+  <!-- Botón de Premio (arriba) / Prize Button (top) -->
+  <button class="button" onclick="activarPremio()">Premio / Prize</button>
 
   <h1>HappyMachine</h1>
   <p>Presenta / Presents:</p>
@@ -50,6 +53,9 @@
   <a href="https://drive.google.com/drive/folders/1Bfzzz68xT8EVbpmc6aGMJIV1Z6xt22TA?usp=sharing" download>
     <button>Descargar Juego / Download Game</button>
   </a>
+
+  <!-- Botón de Premio (abajo) / Prize Button (bottom) -->
+  <button class="button" onclick="activarPremio()">Premio / Prize</button>
   
   <script>
     function activarPremio() {
@@ -68,3 +74,4 @@
 
 </body>
 </html>
+
