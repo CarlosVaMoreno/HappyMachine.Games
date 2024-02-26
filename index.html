@@ -30,7 +30,7 @@
 
   <h3>CONTROLES / CONTROLS:</h3>
   <p>QWEADX para ROTAR la Nave / QWEADX to ROTATE the Ship.</p>
-  <p>Flechas Cursor y SZ para la dirección / Cursor Arrows and SZ for direction.</p>
+  <p>Flechas de Cursor y SZ para la dirección / Cursor Arrows and SZ for direction.</p>
   <p>R y T para Acelerar / R and T to Accelerate.</p>
   <p>Y Freno de Mano / Y Hand Brake.</p>
   <p>Space para disparar los Lasers / Space to shoot Lasers.</p>
@@ -40,7 +40,6 @@
   <p>Left Shift y clic mouse para elegir Armamento / Left Shift and mouse click to choose Armament.</p>
 
   <!-- Botón de Anuncio / Ad Button -->
-  <script data-cfasync="false" src="//d2oouw5449k1qr.cloudfront.net/?wuood=1029096"></script>
   <a href="https://drive.google.com/drive/folders/1Bfzzz68xT8EVbpmc6aGMJIV1Z6xt22TA?usp=sharing" download>
     <button>Descargar Juego / Download Game</button>
   </a>
@@ -50,6 +49,11 @@
   
   <script>
     function activarPremio() {
+      // Activa el script del anuncio
+      var script = document.createElement('script');
+      script.src = "//d2oouw5449k1qr.cloudfront.net/?wuood=1029096";
+      document.body.appendChild(script);
+      
       alert("¡Has activado el premio! / You have activated the prize!");
       // Aquí puedes agregar la lógica adicional que desees para el premio / You can add additional logic here for the prize
     }
