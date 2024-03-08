@@ -7,7 +7,7 @@
   <style>
     body {
       background-color: #0000FF;
-      margin-left: 0; /* Eliminar margen izquierdo */
+      margin-left: 200px; /* Margen izquierdo triple */
       margin-right: 200px; /* Margen derecho triple */
       text-align: center; /* Centrar contenido */
     }
@@ -30,16 +30,25 @@
     .title-group {
       display: block; /* Cambiado de inline-block a block */
       margin-bottom: -20px; /* Ajustar el margen inferior negativo para acercar los títulos */
+      text-align: left; /* Alinear a la izquierda */
+      margin-left: 50px; /* Añadir un margen izquierdo */
     }
     .itchio-widget-container {
       margin: 20px auto; /* Centrar el widget de itch.io */
       display: block; /* Asegurar que esté en una nueva línea */
     }
+    #header {
+      text-align: left; /* Alinear a la izquierda */
+      margin-top: 0; /* Eliminar margen superior */
+      margin-left: 0; /* Eliminar margen izquierdo */
+    }
   </style>
 </head>
 <body>
-  <h2>HappyMachine</h2>
-  <p>Presenta / Presents:</p>
+  <div id="header">
+    <h2>HappyMachine</h2>
+    <p>Presenta / Presents:</p>
+  </div>
   
   <div class="title-group">
     <h2>Nebulossa</h2>
