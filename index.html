@@ -27,8 +27,12 @@
       margin-bottom: 20px;
     }
     .title-group {
-      display: inline-block; /* Para que los elementos se alineen en línea */
+      display: block; /* Cambiado de inline-block a block */
       margin-bottom: -20px; /* Ajustar el margen inferior negativo para acercar los títulos */
+    }
+    .itchio-widget-container {
+      margin: 20px auto; /* Centrar el widget de itch.io */
+      display: block; /* Asegurar que esté en una nueva línea */
     }
   </style>
 </head>
@@ -72,7 +76,9 @@
   <p>Mouse para mover la Vista / Mouse to move the View.</p>
   <p>C para cambiar de Vista / C to change View.</p>
   <p>Left Shift y clic mouse para elegir Armamento / Left Shift and mouse click to choose Armament.</p>
-  <iframe frameborder="0" src="https://itch.io/embed/2547043?linkback=true" width="552" height="167"><a href="https://magoka.itch.io/nebulossasalamandra">NebulossaSALAMANDRA by Magoka</a></iframe>
+  <div class="itchio-widget-container">
+    <iframe frameborder="0" src="https://itch.io/embed/2547043?linkback=true" width="552" height="167"><a href="https://magoka.itch.io/nebulossasalamandra">NebulossaSALAMANDRA by Magoka</a></iframe>
+  </div>
   <!-- Botón de Anuncio / Ad Button -->
   <a href="https://drive.google.com/drive/folders/1Bfzzz68xT8EVbpmc6aGMJIV1Z6xt22TA?usp=sharing" download>
     <button>Descargar Juego / Download Game</button>
