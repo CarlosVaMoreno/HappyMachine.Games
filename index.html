@@ -37,21 +37,10 @@
   </style>
 </head>
 <body>
-  <!-- Botón de Premio (arriba) / Prize Button (top) -->
-  <button class="button" onclick="activarPremio()">Premio / Prize</button>
-  <button class="button" onclick="jugarNebuloussa()">Jugar Nebuloussa</button>
-
   <h2>HappyMachine</h2>
   <p>Presenta / Presents:</p>
   
-  <script>
-    function jugarNebuloussa() {
-      // Aquí puedes agregar la lógica para iniciar el juego Nebuloussa
-      // Abrir una nueva ventana, cargar un script, etc.
-      alert("¡Jugando a Nebuloussa!");
-    }
-  </script>
-   <div class="title-group">
+  <div class="title-group">
     <h2>Nebulossa</h2>
     <h1>SALAMANDRA</h1> 
   </div> 
@@ -76,18 +65,30 @@
   <p>Mouse para mover la Vista / Mouse to move the View.</p>
   <p>C para cambiar de Vista / C to change View.</p>
   <p>Left Shift y clic mouse para elegir Armamento / Left Shift and mouse click to choose Armament.</p>
+
+  <!-- Botón de Jugar Nebuloussa -->
+  <button class="button" onclick="jugarNebuloussa()">Jugar Nebuloussa</button>
+
+  <!-- Botón de Premio -->
+  <button class="button" onclick="activarPremio()">Premio / Prize</button>
+
+  <!-- Widget de itch.io -->
   <div class="itchio-widget-container">
     <iframe frameborder="0" src="https://itch.io/embed/2547043?linkback=true" width="552" height="167"><a href="https://magoka.itch.io/nebulossasalamandra">NebulossaSALAMANDRA by Magoka</a></iframe>
   </div>
+
   <!-- Botón de Anuncio / Ad Button -->
   <a href="https://drive.google.com/drive/folders/1Bfzzz68xT8EVbpmc6aGMJIV1Z6xt22TA?usp=sharing" download>
     <button>Descargar Juego / Download Game</button>
   </a>
 
-  <!-- Botón de Premio (abajo) / Prize Button (bottom) -->
-  <button class="button" onclick="activarPremio()">Premio / Prize</button>
-  
   <script>
+    function jugarNebuloussa() {
+      // Aquí puedes agregar la lógica para iniciar el juego Nebuloussa
+      // Abrir una nueva ventana, cargar un script, etc.
+      alert("¡Jugando a Nebuloussa!");
+    }
+
     function activarPremio() {
       // Activa el script del anuncio
       var script = document.createElement('script');
@@ -104,3 +105,4 @@
   
 </body>
 </html>
+
