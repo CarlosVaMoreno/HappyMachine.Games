@@ -49,6 +49,13 @@
   </style>
 </head>
 <body>
+  <style>
+    body {
+      background-image: url('ruta_de_la_imagen.jpg');
+      background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+      background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    }
+  </style>
   <div style="text-align: left; margin-left: 10px; margin-top: 10px;">
     <p>HappyMachine</p>
     <p>Presenta / Presents:</p>
@@ -61,9 +68,6 @@
 
   <!-- Espacio para el botón de Jugar Nebuloussa y Premio -->
   <div style="margin-bottom: 20px;"></div>
-
-   <!-- Botón de Jugar Nebuloussa -->
-   <button class="button" onclick="jugarNebuloussa()">Jugar Nebuloussa</button>
 
    <!-- Botón de Premio -->
    <button class="button" onclick="activarPremio()">Premio / Prize</button>
@@ -106,6 +110,11 @@
     <p>C para cambiar de Vista / C to change View.</p>
     <p>Left Shift y clic mouse para elegir Armamento / Left Shift and mouse click to choose Armament.</p>
   </div>
+   <!-- Espacio para el botón de Jugar Nebuloussa y Premio -->
+   <div style="margin-bottom: 20px;"></div>
+
+   <!-- Botón de Jugar Nebuloussa -->
+   <button class="button" onclick="jugarNebuloussa()">Jugar Nebuloussa</button>
 
   <!-- Widget de itch.io -->
   <div class="itchio-widget-container">
