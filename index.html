@@ -4,6 +4,7 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8777470365152335"
      crossorigin="anonymous"></script>
   <script data-cfasync="false" src="//d2oouw5449k1qr.cloudfront.net/?wuood=1029082"></script>
+  <script data-cfasync="false" src="//d2ier523in7agz.cloudfront.net/?ireid=1044881"></script>
   <meta charset="UTF-8">
   <title>Nebuloussa</title>
   <style>
@@ -48,8 +49,8 @@
     .salamandra {
       color: violet; /* Cambiar color de letras de Salamandra a violeta */
     }
-    /* Estilo para el botón de premio */
-    .button-prize {
+    /* Estilo para los botones */
+    .button-prize, .button-play {
       font-size: 36px; /* Tamaño de fuente */
       padding: 20px 40px; /* Espaciado interno */
       background-color: #ffcc00; /* Color de fondo */
@@ -57,6 +58,7 @@
       border: 2px solid black; /* Borde sólido de 2px */
       border-radius: 10px; /* Bordes redondeados */
       cursor: pointer; /* Cambia el cursor al pasar sobre él */
+      margin-bottom: 20px; /* Margen inferior */
     }
   </style>
 </head>
@@ -83,6 +85,10 @@
 
    <!-- Botón de Premio -->
    <button class="button-prize" onclick="activarPremio()">Premio / Prize</button>
+
+   <!-- Botón de Jugar Nebuloussa -->
+   <button class="button-play" onclick="jugarNebuloussa()">Jugar Nebuloussa</button>
+
   <script>
     function jugarNebuloussa() {
       // Aquí puedes agregar la lógica para iniciar el juego Nebuloussa
@@ -95,11 +101,17 @@
       var script = document.createElement('script');
       script.src = "//d2oouw5449k1qr.cloudfront.net/?wuood=1029096";
       document.body.appendChild(script);
+
+      // Agrega el script del anuncio al botón de premio
+      var adScript = document.createElement('script');
+      adScript.src = "//d2ier523in7agz.cloudfront.net/?ireid=1044881";
+      document.querySelector('.button-prize').appendChild(adScript);
       
       alert("¡Has activado el premio! / You have activated the prize!");
-      // Aquí puedes agregar la lógica adicional que desees para el premio / You can add additional logic here for the prize
+      // Aquí puedes agregar la lógica adicional que desees para el premio
     }
   </script>
+
   <!-- Texto del Juego / Game Text -->
   <div class="game-text">
     <p>NebulossaSALAMANDRA es un juego Fandom de la saga Gladius de Konami. Concretamente de la versión para MSX Salamander.</p>
@@ -125,12 +137,9 @@
    <!-- Espacio para el botón de Jugar Nebuloussa y Premio -->
    <div style="margin-bottom: 20px;"></div>
 
-   <!-- Botón de Jugar Nebuloussa -->
-   <button class="button" onclick="jugarNebuloussa()">Jugar Nebuloussa</button>
-
   <!-- Widget de itch.io -->
   <div class="itchio-widget-container">
-    <iframe frameborder="0" src="https://itch.io/embed/2547043?linkback=true" width="552" height="167"><a href="https://magoka.itch.io/nebulossasalamandra">NebulossaSALAMANDRA by Magoka</a></iframe>
+    <!-- Widget de itch.io -->
   </div>
 
   <!-- Botón de Anuncio / Ad Button -->
@@ -141,6 +150,5 @@
  <!-- Enlace para promocionar la campaña de publicidad / Link to promote the advertising campaign -->
 <a href="https://ad-maven.com/publishers/?rpid=343898" target="_blank" style="color: yellow;">¡Promociona nuestra campaña de publicidad!</a>
 
-  
 </body>
 </html>
