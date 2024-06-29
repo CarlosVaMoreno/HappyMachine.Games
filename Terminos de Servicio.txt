@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos de Servicio - Juego Matamarcianos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Términos de Servicio - Juego Matamarcianos</h1>
+
+    <p>Bienvenido a los Términos de Servicio del juego Matamarcianos (en adelante, el "Juego"). Al acceder y utilizar el Juego, aceptas estar sujeto a estos Términos de Servicio. Si no estás de acuerdo con estos Términos de Servicio, no debes acceder ni utilizar el Juego.</p>
+
+    <h2>1. Definiciones</h2>
+
+    <ul>
+        <li>**"Usuario"** significa cualquier persona que acceda o utilice el Juego.</li>
+        <li>**"Nosotros", "nos" o "nuestro"** significa los desarrolladores del Juego.</li>
+        <li>**"Juego"** significa el juego Matamarcianos, incluyendo cualquier contenido, característica o servicio disponible dentro del Juego.</li>
+    </ul>
+
+    <h2>2. Concesión de Licencia</h2>
+
+    <p>Te concedemos una licencia no exclusiva, intransferible y revocable para acceder y utilizar el Juego para fines de entretenimiento personal. No puedes utilizar el Juego para ningún otro propósito sin nuestro consentimiento previo por escrito.</p>
+
+    <h2>3. Cuentas de Usuario</h2>
+
+    <p>Para acceder a algunas funciones del Juego, es posible que debas crear una cuenta de usuario. Al crear una cuenta de usuario, aceptas proporcionar información precisa y actualizada sobre ti mismo. Eres responsable de mantener la seguridad de tu cuenta de usuario y de toda la actividad que ocurra bajo tu cuenta.</p>
+
+    <h2>4. Pagos y Reembolsos</h2>
+
+    <p>El Juego puede ofrecer compras dentro del juego, como artículos virtuales o moneda del juego. Estas compras se realizan a través de un proveedor de pagos de terceros y no somos responsables de ningún problema técnico o de facturación que pueda surgir con el proveedor de pagos. No ofrecemos reembolsos por compras dentro del juego.</p>
+
+    <h2>5. Propiedad Intelectual</h2>
+
+    <p>Todo el contenido del Juego, incluyendo imágenes, música, texto y código, está protegido por derechos de autor, marcas registradas y otras leyes de propiedad intelectual. No puedes copiar, distribuir, modificar o crear obras derivadas de cualquier contenido del Juego sin nuestro consentimiento previo por escrito.</p>
+
+    <h2>6. Responsabilidad y Limitaciones</h2>
+
+    <p>El Juego se proporciona "tal cual" y sin garantías de ningún tipo, expresas o implícitas. No garantizamos que el Juego sea ininterrumpido o libre de errores. No somos responsables de ningún daño directo, indirecto, incidental, especial o consecuente que surja del uso del Juego.</p>
+
+    <h2>7. Resolución de Disputas</h2>
+
+    <p>Cualquier disputa que surja de estos Términos de Servicio se regirá e interpretará de conformidad con las leyes de [País donde se encuentra tu empresa]. Aceptas someterte a la jurisdicción exclusiva y excluyente de los tribunales de [País donde se encuentra tu empresa] para resolver cualquier disputa.</p>
+
+    <h2>8. Cambios en los Términos de Servicio</h2>
+
+    <p>Podemos modificar estos Términos de Servicio en cualquier momento. Te notificaremos de cualquier cambio publicando los Términos de Servicio modificados en nuestro sitio web. Al acceder y utilizar el Juego después de que se hayan publicado los Términos de Servicio modificados, aceptas estar sujeto a los Términos de Servicio modificados.</p>
+
+    <h2>9. Contacto</h2>
+
+    <p>Si tienes alguna pregunta sobre estos Términos de Servicio, puedes contactarnos en [tu dirección de correo electrónico].</p>
+</body>
+</html>
