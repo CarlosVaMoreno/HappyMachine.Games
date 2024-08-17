@@ -1,2 +1,2 @@
-Compañia de Entretenimiento HappyMAchine
+Compañia de Entretenimiento HappyMachine.GAMES
 Desarrollador de Juegos
