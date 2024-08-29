@@ -26,7 +26,8 @@
       min-height: 100vh; /* Asegura que el contenido se ajuste a la altura de la ventana */
     }
     .content-wrapper {
-      margin: 0 200px; /* Espacio para banners */
+      width: 100%;
+      max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
       padding: 20px;
       text-align: center; /* Alinea el texto al centro */
       flex: 1; /* Hace que el contenido ocupe el espacio restante */
@@ -115,7 +116,8 @@
       <button class="button-privacy" onclick="irPoliticaPrivacidad()">Política de Privacidad</button>
       <button class="button-terms" onclick="irTerminosServicio()">Términos de Servicio</button>
     </div>
- 
+  </div>
+
   <script>
     function jugarNebuloussa() {
       // Redirigir al usuario a la página de Itch.io del juego SpaceAge
