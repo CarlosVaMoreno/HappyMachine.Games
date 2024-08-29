@@ -9,202 +9,118 @@
   <title>Nebuloussa</title>
   <style>
     body {
-      background-color: black; /* Fondo negro */
-      margin-left: 200px; /* Margen izquierdo triple */
-      margin-right: 200px; /* Margen derecho triple */
-      text-align: center; /* Centrar contenido */
-      color: yellow; /* Cambiar color de letras a amarillo */
+      background-color: black;
+      background-image: url('CaratulaBlackGround2.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      color: yellow;
+      text-align: center;
+      height: 100%;
+    }
+    .content-wrapper {
+      margin-left: 200px; /* Espacio para banners */
+      margin-right: 200px; /* Espacio para banners */
+      padding: 20px;
     }
     h2, h3, p {
-      color: yellow; /* Cambiar color de letras a amarillo */
+      color: yellow;
     }
     h2 {
-      font-size: 50px; /* Tamaño de fuente del subtítulo */
-      margin-bottom: 0; /* Eliminar margen inferior */
-      text-align: center; /* Centrar título Nebuloussa */
+      font-size: 50px;
+      margin-bottom: 0;
+      text-align: center;
     }
     h1 {
       font-size: 100px; 
-      margin-top: 0; /* Eliminar margen superior */
-      margin-bottom: 0; /* Eliminar margen inferior */
-      text-align: center; /* Centrar el texto */
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: center;
     }
     .button {
       margin-bottom: 20px;
     }
     .title-group {
-      display: block; /* Cambiado de inline-block a block */
-      margin-bottom: -20px; /* Ajustar el margen inferior negativo para acercar los títulos */
-      text-align: center; /* Centrar título Salamandra */
+      display: block;
+      margin-bottom: -20px;
+      text-align: center;
     }
     .itchio-widget-container {
-      margin: 20px auto; /* Centrar el widget de itch.io */
-      display: block; /* Asegurar que esté en una nueva línea */
+      margin: 20px auto;
+      display: block;
     }
     .game-text {
-      text-align: justify; /* Justificar texto */
-      margin-left: 20px; /* Margen izquierdo para alinear con los títulos */
-      margin-right: 20px; /* Margen derecho para alinear con los títulos */
+      text-align: justify;
+      margin-left: 20px;
+      margin-right: 20px;
     }
     .salamandra {
-      color: violet; /* Cambiar color de letras de Salamandra a violeta */
+      color: violet;
     }
-    /* Estilo para los botones */
     .button-prize, .button-play {
-      font-size: 36px; /* Tamaño de fuente */
-      padding: 20px 40px; /* Espaciado interno */
-      background-color: #ffcc00; /* Color de fondo */
-      color: black; /* Color del texto */
-      border: 2px solid black; /* Borde sólido de 2px */
-      border-radius: 10px; /* Bordes redondeados */
-      cursor: pointer; /* Cambia el cursor al pasar sobre él */
-      margin-bottom: 20px; /* Margen inferior */
+      font-size: 36px;
+      padding: 20px 40px;
+      background-color: #ffcc00;
+      color: black;
+      border: 2px solid black;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  <style>
-    body {
-      margin: 0;
-            padding: 0;
-            height: 100%;
-            background-image: url('CaratulaBlackGround2.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-    }
-  </style>
-  <div style="text-align: left; margin-left: 10px; margin-top: 10px;">
-    <p>HappyMachine</p>
-    <p>Presenta / Presents:</p>
+  <div class="content-wrapper">
+    <div style="text-align: left; margin-left: 10px; margin-top: 10px;">
+      <p>HappyMachine</p>
+      <p>Presenta / Presents:</p>
+    </div>
+    
+    <div class="title-group">
+      <h2>Nebuloussa SALAMANDRA</h2>
+      <h1 class="salamandra">SPACE AGE</h1> 
+    </div> 
+
+    <div style="margin-bottom: 20px;"></div>
+
+    <button class="button-prize" onclick="activarPremio()">Premio / Prize</button>
+
+    <div class="game-text">
+      <!-- (Aquí va todo el contenido de texto del juego) -->
+      <p>NebulossaSALAMANDRA es un juego Fandom de la saga Gladius de Konami...</p>
+    </div>
+
+    <button class="button-play" onclick="jugarNebuloussa()">Jugar Nebuloussa</button>
+
+    <iframe frameborder="0" src="https://itch.io/embed/2547043" width="552" height="167"><a href="https://magoka.itch.io/nebulossasalamandra">NebuloussaSALAMANDRA by Magoka</a></iframe>
+
+    <a href="https://drive.google.com/drive/folders/1Bfzzz68xT8EVbpmc6aGMJIV1Z6xt22TA?usp=sharing" download>
+      <button>Descargar Juego en Google Drive / Download Game Google Drive</button>
+    </a>
+
+    <a href="https://ad-maven.com/publishers/?rpid=343898" target="_blank" style="color: yellow;">¡Promociona nuestra campaña de publicidad!</a>
   </div>
-  
-  <div class="title-group">
-    <h2>Nebuloussa SALAMANDRA</h2>
-    <h1 class="salamandra">SPACE AGE</h1> 
-  </div> 
-
-  <!-- Espacio para el botón de Jugar Nebuloussa y Premio -->
-  <div style="margin-bottom: 20px;"></div>
-
-   <!-- Botón de Premio -->
-   <button class="button-prize" onclick="activarPremio()">Premio / Prize</button>
-
-  <!-- Texto del Juego / Game Text -->
-  <div class="game-text">
-    <p>NebulossaSALAMANDRA es un juego Fandom de la saga Gladius de Konami. Concretamente de la versión para MSX Salamander.</p>
-    <p>NebulossaSALAMANDRA is a Fandom game based on Konami's Gladius saga. Specifically from the MSX version Salamander.</p>
-
-    <h3>LEYENDA / LORE:</h3>
-    <p>En el apacible Planeta Latis hay una antigua profecía que vaticina el fin de su civilización y la destrucción de todo su sistema estelar. Una estrella cercana al sistema de Latis ha perecido y ha sido engullida por un agujero negro. A través de un agujero de gusano han desembarcado las fuerzas de Salamandra, una raza alienígena primigenia que proviene del centro de la galaxia. A su paso arrasan con todo lo que encuentran, planetas y civilizaciones enteras.</p>
-    <p>Preparados para este día, Latis ha creado las mejores Naves caza Bic y entrenado a los mejores pilotos. Tu primera misión será buscar la nebulosa donde se encuentran las fuerzas de Salamandra y encontrar a su cabecilla que controla todo el enjambre y eliminarlo. Para evitar así que la profecía se haga realidad.</p>
-    <p>In the peaceful Planet Latis there is an ancient prophecy that predicts the end of its civilization and the destruction of its entire stellar system. A star near the Latis system has perished and has been engulfed by a black hole. Through a wormhole, the forces of Salamander have landed, a primordial alien race that comes from the center of the galaxy. In their wake, they lay waste to everything they find, entire planets and civilizations.</p>
-    <p>Prepared for this day, Latis has created the best Bic fighter ships and trained the best pilots. Your first mission will be to search the nebula where the Salamander forces are located and find their leader who controls the entire swarm and eliminate him. To prevent the prophecy from coming true.</p>
-
-    <h3>CONTROLES / CONTROLS:</h3>
-    <p>QWEADX para ROTAR la Nave / QWEADX to ROTATE the Ship.</p>
-    <p>Flechas de Cursor y SZ para la dirección / Cursor Arrows and SZ for direction.</p>
-    <p>R y T para Acelerar / R and T to Accelerate.</p>
-    <p>F Freno de Mano / F Hand Brake.</p>
-    <p>Space para disparar los Lasers / Space to shoot Lasers.</p>
-    <p>G para lanzar los Misiles / G to launch Missiles.</p>
-    <p>Mouse para mover la Vista / Mouse to move the View.</p>
-    <p>C para cambiar de Vista / C to change View.</p>
-    <p>Left Shift y clic mouse para elegir Armamento / Left Shift and mouse click to choose Armament.</p>
-  </div>
-
-   <!-- Botón de Jugar Nebuloussa -->
-   <button class="button-play" onclick="jugarNebuloussa()">Jugar Nebuloussa</button>
-
-  <!-- Widget de itch.io -->
-  <iframe frameborder="0" src="https://itch.io/embed/2547043" width="552" height="167"><a href="https://magoka.itch.io/nebulossasalamandra">NebuloussaSALAMANDRA by Magoka</a></iframe>
-
-  <!-- Botón de Anuncio / Ad Button -->
-  <a href="https://drive.google.com/drive/folders/1Bfzzz68xT8EVbpmc6aGMJIV1Z6xt22TA?usp=sharing" download>
-    <button>Descargar Juego en Google Drive / Download Game Google Drive</button>
-  </a>
-
- <!-- Enlace para promocionar la campaña de publicidad / Link to promote the advertising campaign -->
-<a href="https://ad-maven.com/publishers/?rpid=343898" target="_blank" style="color: yellow;">¡Promociona nuestra campaña de publicidad!</a>
 
   <script>
     function jugarNebuloussa() {
-      // Aquí puedes agregar la lógica para iniciar el juego Nebuloussa
-      // Abrir una nueva ventana, cargar un script, etc.
       alert("¡Jugando a Nebuloussa!");
     }
 
     function activarPremio() {
-      // Activa el script del anuncio
       var script = document.createElement('script');
       script.src = "//d2oouw5449k1qr.cloudfront.net/?wuood=1029096";
       document.body.appendChild(script);
 
-      // Agrega el script del anuncio al botón de premio
       var adScript = document.createElement('script');
       adScript.src = "//d2ier523in7agz.cloudfront.net/?ireid=1044881";
       document.querySelector('.button-prize').appendChild(adScript);
       
       alert("¡Has activado el premio! / You have activated the prize!");
-      // Aquí puedes agregar la lógica adicional que desees para el premio
     }
   </script>
-  <script type="text/javascript"> var infolinks_pid = 3418435; var infolinks_wsid = 0; </script> <script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
-  <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Política de Privacidad</title>
-  <style>
-    body {
-      background-color: black; /* Fondo negro */
-      color: yellow; /* Cambiar color de letras a amarillo */
-      text-align: center; /* Centrar contenido */
-      margin-top: 50px; /* Margen superior */
-    }
-    .button-privacy {
-      font-size: 24px; /* Tamaño de fuente */
-      padding: 10px 20px; /* Espaciado interno */
-      background-color: #ffcc00; /* Color de fondo */
-      color: black; /* Color del texto */
-      border: 2px solid black; /* Borde sólido de 2px */
-      border-radius: 10px; /* Bordes redondeados */
-      cursor: pointer; /* Cambia el cursor al pasar sobre él */
-    }
-  </style>
-</head>
-<body>
-  <!-- Botón para ir a la política de privacidad -->
-  <button class="button-privacy" onclick="irPoliticaPrivacidad()">Política de Privacidad</button>
-
-  <script>
-    function irPoliticaPrivacidad() {
-      // URL de la política de privacidad en GitHub
-      var urlPoliticaPrivacidad = 'PoliticaDePrivacidad.html';
-
-      // Abrir la URL en una nueva ventana
-      window.open(urlPoliticaPrivacidad, '_blank');
-    }
-  </script>
-</body>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu página de inicio</title>
-</head>
-<body>
-    <h1>¡Bienvenido a tu juego!</h1>
-
-    <p>Para acceder al juego, debes aceptar los Términos de Servicio.</p>
-    <a href="https://carlosvamoreno.github.io/SALAMANDRA/Terminos%20de%20Servicio.html">
-      <button>Aceptar Términos de Servicio</button>
-  </a>
-    <p>Al hacer clic en el botón anterior, confirmas que has leído y aceptado los Términos de Servicio.</p>
-</body>
-</html>
-</html>
-
+  <script type="text/javascript"> var infolinks_pid = 3418435; var infolinks_wsid = 0; </script> 
+  <script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
 </body>
 </html>
