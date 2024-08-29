@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Google AdSense Script -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8777470365152335"
-     crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <title>HappyMachine.Games</title>
   <style>
@@ -13,23 +10,23 @@
       padding: 0; /* Elimina el padding por defecto */
     }
     body {
-      background-color: black;
       background-image: url('CaratulaBlackGround2.png');
       background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
-      background-repeat: no-repeat;
-      background-position: center;
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      background-position: center; /* Centra la imagen */
+      background-attachment: fixed; /* Fija la imagen en el fondo durante el scroll */
       color: yellow;
       display: flex;
       flex-direction: column;
-      align-items: center; /* Centra horizontalmente el contenido */
-      justify-content: flex-start; /* Ajusta la alineación vertical para permitir el scroll */
-      min-height: 100vh; /* Asegura que el contenido se ajuste a la altura de la ventana */
+      min-height: 100vh; /* Asegura que el contenido ocupe al menos el 100% del alto de la ventana */
+      box-sizing: border-box; /* Incluye padding y border en el cálculo del alto y ancho */
     }
     .content-wrapper {
       width: 100%;
       max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
       padding: 20px;
       text-align: center; /* Alinea el texto al centro */
+      margin: auto; /* Centra horizontalmente el contenido */
       flex: 1; /* Hace que el contenido ocupe el espacio restante */
     }
     h2, h3, p {
