@@ -114,47 +114,47 @@
       <p>Left Shift y clic mouse para elegir Armamento / Left Shift and mouse click to choose Armament.</p>
     </div>
     
-    <!-- Botón para jugar online -->
-    <button class="button-play" onclick="jugarNebuloussa()">SpaceAge OnLine</button>
+     <!-- Botón para jugar online -->
+     <button class="button-play" onclick="jugarNebuloussa()">SpaceAge OnLine</button>
 
-    <!-- Enlaces a Política de Privacidad y Términos de Servicio -->
-    <button class="button-privacy" onclick="irPoliticaPrivacidad()">Política de Privacidad</button>
-    <button class="button-terms" onclick="irTerminosServicio()">Términos de Servicio</button>
-  </div>
-
-  <script>
-    function jugarNebuloussa() {
-      // Redirigir al usuario a la página de Itch.io del juego SpaceAge
-      window.location.href = "https://magoka.itch.io/nebulossasalamandra"; 
-    }
-
-    function irPoliticaPrivacidad() {
-      // URL de la política de privacidad
-      var urlPoliticaPrivacidad = 'PoliticaDePrivacidad.html';
-      // Abrir la URL en una nueva ventana
-      window.open(urlPoliticaPrivacidad, '_blank');
-    }
-
-    function irTerminosServicio() {
-      // URL de los términos de servicio
-      var urlTerminosServicio = 'TerminosDeServicio.html';
-      // Abrir la URL en una nueva ventana
-      window.open(urlTerminosServicio, '_blank');
-    }
-
-    function activarPremio() {
-      var script = document.createElement('script');
-      script.src = "//d2oouw5449k1qr.cloudfront.net/?wuood=1029096";
-      document.body.appendChild(script);
-
-      var adScript = document.createElement('script');
-      adScript.src = "//d2ier523in7agz.cloudfront.net/?ireid=1044881";
-      document.querySelector('.button-prize').appendChild(adScript);
-      
-      alert("¡Has activado el premio! / You have activated the prize!");
-    }
-  </script>
-  <script type="text/javascript"> var infolinks_pid = 3418435; var infolinks_wsid = 0; </script> 
-  <script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
-</body>
-</html>
+     <!-- Enlaces a Política de Privacidad y Términos de Servicio -->
+     <button class="button-privacy" onclick="irPoliticaPrivacidad()">Política de Privacidad</button>
+     <button class="button-terms" onclick="irTerminosServicio()">Términos de Servicio</button>
+   </div>
+ 
+   <script>
+     function jugarNebuloussa() {
+       // Redirigir al usuario a la página de Itch.io del juego SpaceAge
+       window.location.href = "https://magoka.itch.io/nebulossasalamandra"; 
+     }
+ 
+     function irPoliticaPrivacidad() {
+       // URL de la política de privacidad
+       var urlPoliticaPrivacidad = 'PoliticaDePrivacidad.html';
+       // Abrir la URL en una nueva ventana
+       window.open(urlPoliticaPrivacidad, '_blank');
+     }
+ 
+     function irTerminosServicio() {
+       // URL de los términos de servicio
+       var urlTerminosServicio = 'TerminosDeServicio.html';
+       // Abrir la URL en una nueva ventana
+       window.open(urlTerminosServicio, '_blank');
+     }
+ 
+     function activarPremio() {
+       var script = document.createElement('script');
+       script.src = "//d2oouw5449k1qr.cloudfront.net/?wuood=1029096";
+       document.body.appendChild(script);
+ 
+       var adScript = document.createElement('script');
+       adScript.src = "//d2ier523in7agz.cloudfront.net/?ireid=1044881";
+       document.querySelector('.button-prize').appendChild(adScript);
+       
+       alert("¡Has activado el premio! / You have activated the prize!");
+     }
+   </script>
+   <script type="text/javascript"> var infolinks_pid = 3418435; var infolinks_wsid = 0; </script> 
+   <script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
+ </body>
+ </html>
