@@ -17,49 +17,32 @@
       padding: 0;
       color: yellow;
       text-align: center;
-      height: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
     .content-wrapper {
       margin-left: 200px; /* Espacio para banners */
       margin-right: 200px; /* Espacio para banners */
       padding: 20px;
+      flex: 1; /* Hace que el contenido ocupe el espacio restante */
     }
     h2, h3, p {
       color: yellow;
     }
     h2 {
       font-size: 50px;
-      margin-top: 0; /* Eliminar margen superior */
-      margin-bottom: 10px; /* Ajustar margen inferior */
+      margin-top: 0;
+      margin-bottom: 10px;
       text-align: center;
     }
     h1 {
       font-size: 100px; 
       margin-top: 0;
-      margin-bottom: 20px; /* Ajustar margen inferior */
-      text-align: center;
-    }
-    .button {
       margin-bottom: 20px;
-    }
-    .title-group {
-      display: block;
-      margin-bottom: 40px; /* Aumentar margen inferior */
       text-align: center;
     }
-    .itchio-widget-container {
-      margin: 20px auto;
-      display: block;
-    }
-    .game-text {
-      text-align: justify;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    .salamandra {
-      color: violet;
-    }
-    .button-prize, .button-play {
+    .button-prize, .button-play, .button-privacy, .button-terms {
       font-size: 36px;
       padding: 20px 40px;
       background-color: #ffcc00;
@@ -68,6 +51,14 @@
       border-radius: 10px;
       cursor: pointer;
       margin-bottom: 20px;
+    }
+    .button-privacy, .button-terms {
+      font-size: 24px;
+      padding: 10px 20px;
+      margin-bottom: 10px; /* Ajuste para separación entre botones */
+    }
+    .footer-buttons {
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -83,7 +74,7 @@
       <h2 class="salamandra">Nebuloussa Salamander</h2> 
     </div> 
 
-    <div style="margin-bottom: 40px;"></div> <!-- Aumentar el margen para mayor separación -->
+    <div style="margin-bottom: 40px;"></div>
 
     <!-- Enlace de descarga del juego -->
     <a href="https://drive.google.com/file/d/1MfPwC0UnIX0x-xb_IGHhPH98uqhkyYfx/view?usp=sharing" download>
@@ -114,47 +105,37 @@
       <p>Left Shift y clic mouse para elegir Armamento / Left Shift and mouse click to choose Armament.</p>
     </div>
     
-     <!-- Botón para jugar online -->
-     <button class="button-play" onclick="jugarNebuloussa()">SpaceAge OnLine</button>
+    <!-- Botón para jugar online -->
+    <button class="button-play" onclick="jugarNebuloussa()">SpaceAge OnLine</button>
 
-     <!-- Enlaces a Política de Privacidad y Términos de Servicio -->
-     <button class="button-privacy" onclick="irPoliticaPrivacidad()">Política de Privacidad</button>
-     <button class="button-terms" onclick="irTerminosServicio()">Términos de Servicio</button>
-   </div>
+    <!-- Enlaces a Política de Privacidad y Términos de Servicio en el pie de página -->
+    <div class="footer-buttons">
+      <button class="button-privacy" onclick="irPoliticaPrivacidad()">Política de Privacidad</button>
+      <button class="button-terms" onclick="irTerminosServicio()">Términos de Servicio</button>
+    </div>
+  </div>
  
-   <script>
-     function jugarNebuloussa() {
-       // Redirigir al usuario a la página de Itch.io del juego SpaceAge
-       window.location.href = "https://magoka.itch.io/nebulossasalamandra"; 
-     }
- 
-     function irPoliticaPrivacidad() {
-       // URL de la política de privacidad
-       var urlPoliticaPrivacidad = 'PoliticaDePrivacidad.html';
-       // Abrir la URL en una nueva ventana
-       window.open(urlPoliticaPrivacidad, '_blank');
-     }
- 
-     function irTerminosServicio() {
-       // URL de los términos de servicio
-       var urlTerminosServicio = 'Terminos de Servicio.html';
-       // Abrir la URL en una nueva ventana
-       window.open(urlTerminosServicio, '_blank');
-     }
- 
-     function activarPremio() {
-       var script = document.createElement('script');
-       script.src = "//d2oouw5449k1qr.cloudfront.net/?wuood=1029096";
-       document.body.appendChild(script);
- 
-       var adScript = document.createElement('script');
-       adScript.src = "//d2ier523in7agz.cloudfront.net/?ireid=1044881";
-       document.querySelector('.button-prize').appendChild(adScript);
-       
-       alert("¡Has activado el premio! / You have activated the prize!");
-     }
-   </script>
-   <script type="text/javascript"> var infolinks_pid = 3418435; var infolinks_wsid = 0; </script> 
-   <script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
- </body>
- </html>
+  <script>
+    function jugarNebuloussa() {
+      // Redirigir al usuario a la página de Itch.io del juego SpaceAge
+      window.location.href = "https://magoka.itch.io/nebulossasalamandra"; 
+    }
+
+    function irPoliticaPrivacidad() {
+      // URL de la política de privacidad
+      var urlPoliticaPrivacidad = 'PoliticaDePrivacidad.html';
+      // Abrir la URL en una nueva ventana
+      window.open(urlPoliticaPrivacidad, '_blank');
+    }
+
+    function irTerminosServicio() {
+      // URL de los términos de servicio
+      var urlTerminosServicio = 'TerminosDeServicio.html';
+      // Abrir la URL en una nueva ventana
+      window.open(urlTerminosServicio, '_blank');
+    }
+  </script>
+  <script type="text/javascript"> var infolinks_pid = 3418435; var infolinks_wsid = 0; </script> 
+  <script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
+</body>
+</html>
