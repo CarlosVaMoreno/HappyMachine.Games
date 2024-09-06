@@ -79,6 +79,8 @@
       border-radius: 10px;
       cursor: pointer;
       margin-bottom: 20px;
+      display: inline-block;
+      text-decoration: none; /* Elimina el subrayado de los enlaces */
     }
 
     .button-privacy, .button-terms {
@@ -88,6 +90,18 @@
     }
 
     .footer-buttons {
+      margin-top: 20px;
+    }
+
+    .whatsapp-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #25D366;
+      color: white;
+      border: 2px solid black;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 24px;
       margin-top: 20px;
     }
   </style>
@@ -125,13 +139,11 @@
 
     <!-- Enlace de descarga del juego para Android -->
     <a href="https://drive.google.com/file/d/1MaHjhXa6SrnbZcUNRnQjDE175PABEmqP/view?usp=sharing" download>
-    <button class="button-prize" onclick="Descargando()">SPACE AGE Android</button>
+      <button class="button-prize" onclick="Descargando()">SPACE AGE Android</button>
     </a>
-  </div>
-    
-  <!-- Botón para jugar online -->
-  <button class="button-play" onclick="jugarNebuloussa()">SpaceAge OnLine</button>
-  <div>
+ 
+    <!-- Botón para jugar online -->
+    <button class="button-prize button-play" onclick="jugarNebuloussa()">SpaceAge OnLine</button>
 
     <!-- Texto del Juego / Game Text -->
     <div class="game-text">
@@ -156,18 +168,17 @@
       <p>C para cambiar de Vista / C to change View.</p>
       <p>Left Shift y clic mouse para elegir Armamento / Left Shift and mouse click to choose Armament.</p>
     
-     <!-- Botón para unirse al grupo de WhatsApp -->
-  <a href="https://chat.whatsapp.com/LEEV0oqRU48AIIX58IDdnM" class="whatsapp-button" target="_blank">
-    Únete a nuestro chat en WhatsApp
-  </a>
-  <div>
+      <!-- Botón para unirse al grupo de WhatsApp -->
+      <a href="https://chat.whatsapp.com/LEEV0oqRU48AIIX58IDdnM" class="whatsapp-button" target="_blank">
+        Únete a nuestro chat en WhatsApp
+      </a>
+    </div>
 
     <!-- Enlaces a Política de Privacidad y Términos de Servicio en el pie de página -->
     <div class="footer-buttons">
       <button class="button-privacy" onclick="irPoliticaPrivacidad()">Política de Privacidad</button>
       <button class="button-terms" onclick="irTerminosServicio()">Términos de Servicio</button>
     </div>
-  </div>
 
   <script>
     const audio = document.getElementById("myAudio");
