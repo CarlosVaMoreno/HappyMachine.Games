@@ -20,25 +20,27 @@
       margin: 0; /* Elimina el margen por defecto */
       padding: 0; /* Elimina el padding por defecto */
     }
+
     body {
-      background-image: url('CaratulaBlackGround2.png');
+      
+      background-image: url('caratula3_animation.mp4'); /* background-image: url('CaratulaBlackGround2.png');
       background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
       background-repeat: no-repeat; /* Evita que la imagen se repita */
-      background-position: center; /* Centra la imagen */
-      background-attachment: fixed; /* Fija la imagen en el fondo durante el scroll */
+       background-position: center; /* Centra la imagen */
+       background-attachment: fixed; /* Fija la imagen en el fondo durante el scroll */
       color: yellow;
       display: flex;
       flex-direction: column;
       min-height: 100vh; /* Asegura que el contenido ocupe al menos el 100% del alto de la ventana */
-      box-sizing: border-box; /* Incluye padding y border en el cálculo del alto y ancho */
+       box-sizing: border-box; /* Incluye padding y border en el cálculo del alto y ancho */
     }
     .content-wrapper {
       width: 100%;
       max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
-      padding: 20px;
+       padding: 20px;
       text-align: center; /* Alinea el texto al centro */
       margin: auto; /* Centra horizontalmente el contenido */
-      flex: 1; /* Hace que el contenido ocupe el espacio restante */
+       flex: 1; /* Hace que el contenido ocupe el espacio restante */
     }
     h2, h3, p {
       color: yellow;
@@ -74,6 +76,14 @@
   </style>
 </head>
 <body>
+  <video autoplay muted loop id="myVideo">
+    <source src="caratula3_animation.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<audio autoplay loop id="myAudio">
+    <source src="Three Drives - Greece 2000 (Gabi Newman Remix).mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+</audio>
   <div class="content-wrapper">
     <div style="text-align: left; margin-left: 10px; margin-top: 10px;">
       <p>HappyMachine.Games</p>
@@ -142,6 +152,9 @@
   </div>
 
   <script>
+    const audio = document.getElementById("myAudio");
+    audio.volume = 0.5; // Ajusta el volumen entre 0 y 1
+
     function jugarNebuloussa() {
       // Redirigir al usuario a la página de Itch.io del juego SpaceAge
       window.location.href = "https://magoka.itch.io/nebulossasalamandra"; 
