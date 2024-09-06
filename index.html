@@ -15,15 +15,13 @@
 
   <style>
     html, body {
-      
       height: 100%; /* Asegura que html y body ocupen el 100% del alto */
       margin: 0; /* Elimina el margen por defecto */
       padding: 0; /* Elimina el padding por defecto */
-      overflow-y: auto; /* el scroll  */
+      overflow-y: scroll; /* Habilita el scroll */
     }
 
     body {
-      
       color: yellow;
       display: flex;
       flex-direction: column;
@@ -33,7 +31,7 @@
     }
 
     video#myVideo {
-      position: absolute; /* Asegura que el video esté detrás del contenido */
+      position: fixed; /* Asegura que el video esté fijo en el fondo */
       top: 0;
       left: 0;
       width: 100%;
@@ -166,45 +164,22 @@
       <p>F Freno de Mano / F Hand Brake.</p>
       <p>Space para disparar los Lasers / Space to shoot Lasers.</p>
       <p>G para lanzar los Misiles / G to launch Missiles.</p>
-      <p>'Y' para lanzar bengalas para despistar Torpedos/ 'Y' to launch flares to mislead torpedoes</p>
-      <p>Mouse para mover la Vista / Mouse to move the View.</p>
-      <p>C para cambiar de Vista / C to change View.</p>
-      <p>Left Shift y clic mouse para elegir Armamento / Left Shift and mouse click to choose Armament.</p>
-    
-      <!-- Botón para unirse al grupo de WhatsApp -->
-      <a href="https://chat.whatsapp.com/LEEV0oqRU48AIIX58IDdnM" class="whatsapp-button" target="_blank">
-        Únete a nuestro chat en WhatsApp
+      <p>'Y' para lanzar bengalas para despistar Torpedos/ 'Y' to launch flares to dodge Torpedoes.</p>
+    </div>
+
+    <!-- Botones adicionales -->
+    <div class="footer-buttons">
+      <a href="https://drive.google.com/file/d/1MfPwC0UnIX0x-xb_IGHhPH98uqhkyYfx/view?usp=sharing" download>
+        <button class="button-privacy">Política de Privacidad</button>
+      </a>
+      <a href="https://drive.google.com/file/d/1MaHjhXa6SrnbZcUNRnQjDE175PABEmqP/view?usp=sharing" download>
+        <button class="button-terms">Términos y Condiciones</button>
       </a>
     </div>
 
-    <!-- Enlaces a Política de Privacidad y Términos de Servicio en el pie de página -->
-    <div class="footer-buttons">
-      <button class="button-privacy" onclick="irPoliticaPrivacidad()">Política de Privacidad</button>
-      <button class="button-terms" onclick="irTerminosServicio()">Términos de Servicio</button>
-    </div>
-
-  <script>
-    const audio = document.getElementById("myAudio");
-    audio.volume = 0.5; // Ajusta el volumen entre 0 y 1
-
-    function jugarNebuloussa() {
-      // Redirigir al usuario a la página de Itch.io del juego SpaceAge
-      window.location.href = "https://magoka.itch.io/nebulossasalamandra"; 
-    }
-
-    function irPoliticaPrivacidad() {
-      // URL de la política de privacidad
-      var urlPoliticaPrivacidad = 'PoliticaDePrivacidad.html';
-      // Abrir la URL en una nueva ventana
-      window.open(urlPoliticaPrivacidad, '_blank');
-    }
-
-    function irTerminosServicio() {
-      // URL de los términos de servicio
-      var urlTerminosServicio = 'Terminos%20de%20Servicio.html'; // Ajuste al nombre correcto del archivo
-      // Abrir la URL en una nueva ventana
-      window.open(urlTerminosServicio, '_blank');
-    }
-  </script>
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/5491158796362" class="whatsapp-button">Escribinos al WhatsApp</a>
+  </div>
+  
 </body>
 </html>
