@@ -105,6 +105,67 @@
       font-size: 24px;
       margin-top: 20px;
     }
+    /* Adaptaciones para dispositivos móviles */
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .button-prize, .button-play, .button-privacy, .button-terms {
+    font-size: 24px;
+    padding: 15px 30px;
+  }
+
+  .button-privacy, .button-terms {
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+
+  .footer-buttons {
+    margin-top: 10px;
+  }
+
+  .whatsapp-button {
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+}
+
+/* Adaptaciones para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .button-prize, .button-play, .button-privacy, .button-terms {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  .button-privacy, .button-terms {
+    font-size: 18px;
+    padding: 6px 12px;
+  }
+
+  .whatsapp-button {
+    font-size: 18px;
+    padding: 6px 12px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -169,7 +230,13 @@
     </a>
  
     <!-- Botón para jugar online -->
-    <button class="button-prize button-play" onclick="jugarNebuloussa()">SpaceAge OnLine</button>
+<button class="button-prize button-play" onclick="jugarNebuloussa()">SpaceAge OnLine</button>
+
+<script>
+  function jugarNebuloussa() {
+    window.location.href = 'https://magoka.itch.io/nebulossasalamandra';
+  }
+</script>
 
     <!-- Texto del Juego / Game Text -->
     <div class="game-text">
