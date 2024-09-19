@@ -1,0 +1,15 @@
+{
+  "name": "SpaceAge",
+  "version": "1.0.0",
+  "description": "Un juego web desplegado en Netlify",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'No build step needed' && exit 0",
+    "start": "serve"
+  },
+  "author": "GOLEM",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.0.1"
+  }
+}
